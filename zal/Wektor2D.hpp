@@ -58,21 +58,3 @@ double operator*(Wektor2D& first, Wektor2D& second)
 	tmp+=(first.getY() * second.getY()); 
 	return tmp;
 }
-
-int main()
-{
-	Wektor2D v1{ };
-	v1.setX(1);
-	v1.setY(1);
-	v1.Drukuj();
-	double x1 = v1.getX();
-  double y1 = v1.getY();
-	Wektor2D v2{ 2, 2 };
-	v2.Drukuj();
-	Wektor2D sum{};
-	sum = v1 + v2;
-	sum.Drukuj();
-	double prod = v1 * v2;
-	cout << prod << endl;
-	return 0;
-}
